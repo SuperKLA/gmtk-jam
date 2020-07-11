@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f0616ddab0922c4eb7c602bce6e0332, type: 3}
-  m_Name: Hospital
+  m_Name: D
   m_EditorClassIdentifier: 
-  name: Hospital
-  image: {fileID: 0}
-  state: OK
+  name: Depot D
+  image: {fileID: 21300000, guid: 68cc33ee4318aea4da6eb841f0a256d6, type: 3}
+  state: 0
