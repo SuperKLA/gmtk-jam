@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 public class Quest
 {
-    public Quest(int iD, QuestState state, string questText, NpcOrItemToInteract NpcOrItem)
+    public Quest(int iD, QuestState state, string questText, Interactive interactable)
     {
         ID = iD;
         this.state = state;
         QuestText = questText;
-        this.NpcOrItem = NpcOrItem;
+        Interactive = interactable;
     }
 
     public readonly int ID;
     public QuestState state { set; get; }
     public readonly string QuestText;
-    public readonly NpcOrItemToInteract NpcOrItem;
+    public readonly Interactive Interactive;
 }
