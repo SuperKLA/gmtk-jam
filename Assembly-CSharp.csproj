@@ -67,6 +67,8 @@
      <Compile Include="Assets\API\GameRunTime.cs" />
      <Compile Include="Assets\API\Interactable.cs" />
      <Compile Include="Assets\API\Ruder.cs" />
+     <Compile Include="Assets\API\SpriteBehind.cs" />
+     <None Include="Assets\Shader\SpriteBehind.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
