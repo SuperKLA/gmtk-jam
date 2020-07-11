@@ -7,10 +7,17 @@ using System.Threading.Tasks;
 
 static class Dialogs
 {
-    static public Queue<DialogText> Test_Dialog = CreateQueue(new List<DialogText>() {  new DialogText("Space", "Hallo"),
-                                                                                        new DialogText("Other", "Ja Hi"),
-                                                                                        new DialogText("Space", "adksjf"),
-                                                                                        new DialogText("Other", "OK CIAO")});
+
+    public static Queue<DialogText> TestDialogListe
+    {
+        get
+        {
+            return CreateQueue(new List<DialogText>() {  new DialogText("Space", "Hallo"),
+                                                                         new DialogText("Other", "Ja Hi"),
+                                                                         new DialogText("Space", "adksjf"),
+                                                                         new DialogText("Other", "OK CIAO") });
+        }
+    }
 
 
 
