@@ -10,6 +10,7 @@ public class Building : MonoBehaviour
     public SpriteMask MaskRenderer;
     public Transform MaskUp;
     public Transform MaskFront;
+    public Interactable Door;
     
     private void Update()
     {
