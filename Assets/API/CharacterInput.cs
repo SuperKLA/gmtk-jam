@@ -31,6 +31,16 @@ public class CharacterInput : MonoBehaviour
         {
             moveDir.y = -Speed;
         }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            //DialogTest:
+            DialogManager dm = FindObjectOfType<DialogManager>();
+            if (!dm.IsDialogActive)
+                dm.StartDialog(Dialogs.Test_Dialog);
+            else
+                dm.NextTextInDialog();
+        }
         
         moveDir.x = Mathf.Clamp(moveDir.x, -this.Speed, this.Speed);
         moveDir.y = Mathf.Clamp(moveDir.y, -this.Speed, this.Speed);

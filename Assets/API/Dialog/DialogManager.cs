@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,14 +11,12 @@ public class DialogManager : MonoBehaviour
     private Queue<DialogText> currentDialog;
 
     public Image dialogImage;
-    public Text speakerText;
-    public Text dialogText;
+    public TMP_Text speakerText;
+    public TMP_Text dialogText;
 
 
-    public bool IsDialogActive()
-    {
-        return dialogActive;
-    }
+    public bool IsDialogActive { get { return dialogActive; } }
+
 
     public void StartDialog(Queue<DialogText> dialog)
     {
