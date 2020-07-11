@@ -59,11 +59,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\API\Boat.cs" />
+     <Compile Include="Assets\API\Building.cs" />
      <Compile Include="Assets\API\Character.cs" />
      <Compile Include="Assets\API\CharacterInput.cs" />
      <Compile Include="Assets\API\DontDestroy.cs" />
      <Compile Include="Assets\API\DragTransform.cs" />
      <Compile Include="Assets\API\GameRunTime.cs" />
+     <Compile Include="Assets\API\Interactable.cs" />
      <Compile Include="Assets\API\Ruder.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
