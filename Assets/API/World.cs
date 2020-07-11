@@ -16,6 +16,7 @@ public class World : MonoBehaviour
     
     public void OnBuildEnter( BuildingData data)
     {
+        OutOfControlCamera.Current.OwnTransform.parent = null;
         BuildingEnterData = data;
     }
 
@@ -23,5 +24,6 @@ public class World : MonoBehaviour
     {
         Character.Current.SetCharacterOn(this.BuildingEnterData.DoorPosition);
         Character.Current.SetCharacterLayer(LayerMask.NameToLayer("Player"));
+        Character.Current.SetCameraOffset(OutOfControlCamera.Current.OwnTransform);
     }
 }

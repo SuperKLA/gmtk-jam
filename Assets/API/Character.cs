@@ -8,17 +8,18 @@ using UnityEngine.Rendering;
 public class Character : MonoBehaviour
 {
     public List<SpriteRenderer> OwnSorting;
-    public Transform      OwnTransform;
-    public CharacterInput CharacterInput;
-    public Collider2D OwnCollider;
-    
+    public Transform            OwnTransform;
+    public CharacterInput       CharacterInput;
+    public Collider2D           OwnCollider;
+    public Transform            CameraOffset;
+
     public static Character Current;
 
     private void Start()
     {
         Current = this;
     }
-    
+
     private void Update()
     {
         UpdateSprites();
@@ -37,13 +38,18 @@ public class Character : MonoBehaviour
     {
         this.OwnTransform.position = position;
     }
-    
+
     public void SetCharacterLayer(LayerMask layer)
     {
         this.gameObject.layer = layer;
-        foreach (Transform child in this.gameObject.GetComponentsInChildren<Transform>(true))  
+        foreach (Transform child in this.gameObject.GetComponentsInChildren<Transform>(true))
         {
             child.gameObject.layer = layer; // add any layer you want. 
         }
+    }
+    
+    public void SetCameraOffset(Transform trans)
+    {
+        trans.SetParent(this.CameraOffset, false);
     }
 }

@@ -58,8 +58,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\FMOD\addons\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
-     <Compile Include="Assets\Plugins\FMOD\addons\ResonanceAudio\Scripts\FmodResonanceAudioRoom.cs" />
      <Compile Include="Assets\Plugins\FMOD\src\Runtime\BankRefAttribute.cs" />
      <Compile Include="Assets\Plugins\FMOD\src\Runtime\EventHandler.cs" />
      <Compile Include="Assets\Plugins\FMOD\src\Runtime\EventRefAttribute.cs" />
