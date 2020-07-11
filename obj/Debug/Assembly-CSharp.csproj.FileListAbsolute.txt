@@ -327,3 +327,7 @@ F:\Repositorys\gmtk_jam\gmtk-jam\obj\Debug\Assembly-CSharp.csproj.CoreCompileInp
 F:\Repositorys\gmtk_jam\gmtk-jam\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 F:\Repositorys\gmtk_jam\gmtk-jam\obj\Debug\Assembly-CSharp.dll
 F:\Repositorys\gmtk_jam\gmtk-jam\obj\Debug\Assembly-CSharp.pdb
+F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Editor.dll
+F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Runtime.dll
+F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Editor.pdb
+F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Runtime.pdb
