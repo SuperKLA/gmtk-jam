@@ -58,12 +58,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\API\Demo.cs" />
+     <Compile Include="Assets\API\Boat.cs" />
+     <Compile Include="Assets\API\Character.cs" />
+     <Compile Include="Assets\API\CharacterInput.cs" />
+     <Compile Include="Assets\API\DontDestroy.cs" />
+     <Compile Include="Assets\API\DragTransform.cs" />
+     <Compile Include="Assets\API\GameRunTime.cs" />
+     <Compile Include="Assets\API\Ruder.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.CacheServer">
+ <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+ <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect.Editor">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
@@ -80,11 +92,17 @@
  <Reference Include="Unity.2D.Path.Editor">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ResourceManager">
+ <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Addressables.Editor">
+ <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
@@ -125,6 +143,12 @@
  <Reference Include="Unity.2D.Animation.Editor">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Addressables">
+ <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline">
+ <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Mathematics.Editor">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
@@ -139,24 +163,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.CacheServer">
- <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ScriptableBuildPipeline.Editor">
- <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ResourceManager">
- <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Addressables.Editor">
- <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Addressables">
- <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ScriptableBuildPipeline">
- <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.quicksearch">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/com.unity.quicksearch.dll</HintPath>
