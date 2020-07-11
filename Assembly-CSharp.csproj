@@ -66,9 +66,14 @@
      <Compile Include="Assets\API\DragTransform.cs" />
      <Compile Include="Assets\API\GameRunTime.cs" />
      <Compile Include="Assets\API\Interactable.cs" />
+     <Compile Include="Assets\API\Quest\NpcOrItemToInteract.cs" />
+     <Compile Include="Assets\API\Quest\Quest.cs" />
+     <Compile Include="Assets\API\Quest\QuestHelper.cs" />
+     <Compile Include="Assets\API\Quest\QuestManager.cs" />
+     <Compile Include="Assets\API\Quest\QuestState.cs" />
      <Compile Include="Assets\API\Ruder.cs" />
      <Compile Include="Assets\API\SpriteBehind.cs" />
-     <None Include="Assets\Shader\SpriteBehind.shader" />
+     <None Include="Assets\SpriteOutline\Shaders\SpriteOutline.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/GameProjects/gmtk-jam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
