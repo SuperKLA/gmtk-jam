@@ -13,11 +13,6 @@ public class QuestManager : MonoBehaviour
     }
     #endregion Init
 
-
-
-
-
-
     public List<Quest> GetAllQuestsDone()
     {
         return quests.FindAll(q => q.state == QuestState.Done);

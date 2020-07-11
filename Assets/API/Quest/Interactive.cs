@@ -5,9 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public enum NpcOrItemToInteract
+public enum Interactive
 {
     EnterHouse,
-
 }
 
