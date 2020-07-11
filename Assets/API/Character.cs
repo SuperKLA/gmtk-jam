@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
+[ExecuteAlways]
 public class Character : MonoBehaviour
 {
     public List<SpriteRenderer> OwnSorting;
