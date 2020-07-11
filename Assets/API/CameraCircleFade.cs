@@ -21,20 +21,20 @@ public static class CameraExtension
     public static void FadeIn(this Camera cam, float duration, Action oncomplete = null, Easing.Type easing = Easing.Type.CubicInOut)
     {
         CameraCircleFade cf = camFade(cam);
-        cf.Tween(0f, 1.2f, duration, x => cf.radius = x, easing, oncomplete);
+        cf.Tween(0f, 1.4f, duration, x => cf.radius = x, easing, oncomplete);
     }
 
     public static void FadeOut(this Camera cam, float duration, Action oncomplete = null, Easing.Type easing = Easing.Type.CubicInOut)
     {
         CameraCircleFade cf = camFade(cam);
-        cf.Tween(1.2f, 0f, duration, x => cf.radius = x, easing, oncomplete);
+        cf.Tween(1.4f, 0f, duration, x => cf.radius = x, easing, oncomplete);
     }
 }
 
 [ExecuteInEditMode]
 public class CameraCircleFade : MonoBehaviour
 {
-    [Range(0f, 1.2f)]
+    [Range(0f, 1.4f)]
     public float radius;
 
     float    _radius;
@@ -57,7 +57,7 @@ public class CameraCircleFade : MonoBehaviour
     {
         if (Application.isEditor && !Application.isPlaying)
         {
-            radius = 1f;
+            radius = 1.4f;
         }
     }
     

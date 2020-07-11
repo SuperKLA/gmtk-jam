@@ -41,7 +41,7 @@ public class Building : MonoBehaviour
     {
         OutOfControlCamera.Current.FadeOut(() =>
         {
-            SceneManager.LoadSceneAsync("BuildingRoom").completed += operation =>
+            SceneManager.LoadSceneAsync("BuildingRoom", LoadSceneMode.Additive).completed += operation =>
             {
 
             };
