@@ -151,7 +151,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -344
+  m_SortingOrder: -200
   m_Sprite: {fileID: 21300000, guid: a59f9d035a39a4d438f96105388d3383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -208,8 +208,8 @@ SpriteMask:
   m_BackSortingLayerID: -1729219717
   m_FrontSortingLayer: 1
   m_BackSortingLayer: 1
-  m_FrontSortingOrder: -418
-  m_BackSortingOrder: -586
+  m_FrontSortingOrder: -274
+  m_BackSortingOrder: -442
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
 --- !u!1 &4607331267347752987
@@ -306,6 +306,7 @@ Transform:
   - {fileID: 4607331267347752986}
   - {fileID: 4607331267879355232}
   - {fileID: 7549024408005130538}
+  - {fileID: 895420426549968982}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -325,6 +326,7 @@ MonoBehaviour:
   MaskRenderer: {fileID: 4607331267334319562}
   MaskUp: {fileID: 4607331267347752986}
   MaskFront: {fileID: 4607331267879355232}
+  DoorExitSpawn: {fileID: 8824519112423433071}
   Door: {fileID: 8303655920357722932}
 --- !u!50 &4607331269421919944
 Rigidbody2D:
@@ -373,6 +375,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4416018, y: 1.1616769}
   m_EdgeRadius: 0
+--- !u!1 &8824519112423433071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895420426549968982}
+  m_Layer: 11
+  m_Name: ExitSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895420426549968982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8824519112423433071}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4607331269421919946}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9104239472269446955
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,3 +476,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216ef672ae12f49409adfbb743b29c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanInteract: 0
+  OwnCollider: {fileID: 7424807441145421914}

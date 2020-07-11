@@ -7,6 +7,7 @@ public class CharacterInput : MonoBehaviour
 {
     public Rigidbody2D OwnRigidBody;
     public float Speed = 1f;
+    public event Action OnMove;
 
     public void Update()
     {
