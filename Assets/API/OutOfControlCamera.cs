@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-[ExecuteAlways]
 public class OutOfControlCamera : MonoBehaviour
 {
     public Camera OwnCamera;
@@ -18,7 +17,11 @@ public class OutOfControlCamera : MonoBehaviour
 
     public void FadeOut(System.Action fadeOut)
     {
-        this.OwnCamera.FadeOut(1f, fadeOut);
+        this.OwnCamera.FadeOut(1f, ()=>
+        {
+            this.gameObject.SetActive(false);
+            fadeOut();
+        });
     }
 
 
@@ -28,6 +31,7 @@ public class OutOfControlCamera : MonoBehaviour
 
     public void FadeIn()
     {
+        this.gameObject.SetActive(true);
         this.OwnCamera.FadeIn(1f);
     }
 }

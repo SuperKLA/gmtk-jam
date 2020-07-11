@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-[ExecuteAlways]
 public class BuildingRoomCamera : MonoBehaviour
 {
     public Camera OwnCamera;
@@ -15,7 +14,12 @@ public class BuildingRoomCamera : MonoBehaviour
     }
 
 
-    private void Update()
+    public void FadeOut(System.Action fadeOut)
     {
+        this.OwnCamera.FadeOut(1f, ()=>
+        {
+            this.gameObject.SetActive(false);
+            fadeOut();
+        });
     }
 }

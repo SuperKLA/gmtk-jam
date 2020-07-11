@@ -4,6 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public class BuildingData
+{
+    public Vector3 DoorPosition { get; set; }
+}
+
 [ExecuteAlways]
 public class Building : MonoBehaviour
 {
@@ -12,6 +17,7 @@ public class Building : MonoBehaviour
     
     public Transform MaskUp;
     public Transform MaskFront;
+    public GameObject DoorExitSpawn;
     
     public Interactable Door;
 
@@ -39,6 +45,11 @@ public class Building : MonoBehaviour
     
     private void DoorOnInteracting()
     {
+        World.Current.OnBuildEnter(new BuildingData()
+        {
+            DoorPosition = this.DoorExitSpawn.transform.position
+        });
+        
         OutOfControlCamera.Current.FadeOut(() =>
         {
             SceneManager.LoadSceneAsync("BuildingRoom", LoadSceneMode.Additive).completed += operation =>

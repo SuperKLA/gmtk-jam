@@ -5,26 +5,42 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-[ExecuteAlways]
 public class BuildingRoom : MonoBehaviour
 {
     public Interactable ExitDoor;
     public GameObject SpawnPosition;
+    public BuildingRoomCamera BuildingRoomCamera;
+    public bool CanExitRoom = false;
     
     private void Start()
     {
         ExitDoor.OnInteracting += DoorOnExit;
+        this.CanExitRoom = !this.ExitDoor.IsInBounds(Character.Current.OwnCollider.bounds);
+        
+        Character.Current.SetCharacterOn(this.SpawnPosition.transform.position);
+        Character.Current.SetCharacterLayer(LayerMask.NameToLayer("BuildingRoom"));
+        
+        Character.Current.CharacterInput.OnMove += CharacterInputOnOnMove;
+    }
+
+    private void CharacterInputOnOnMove()
+    {
+        if (this.CanExitRoom) return;
+        
+        this.CanExitRoom = !this.ExitDoor.IsInBounds(Character.Current.OwnCollider.bounds);
     }
 
     private void DoorOnExit()
     {
-        SceneManager.UnloadSceneAsync("BuildingRoom").completed += operation =>
+        Character.Current.CharacterInput.OnMove -= CharacterInputOnOnMove;
+        
+        BuildingRoomCamera.FadeOut(() =>
         {
-            OutOfControlCamera.Current.FadeIn();
-        };
-    }
-
-    private void Update()
-    {
+            SceneManager.UnloadSceneAsync("BuildingRoom").completed += operation =>
+            {
+                OutOfControlCamera.Current.FadeIn();
+                World.Current.OnBuildLeft();
+            };
+        });
     }
 }
