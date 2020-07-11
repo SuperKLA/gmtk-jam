@@ -37,7 +37,7 @@ public class CharacterInput : MonoBehaviour
             //DialogTest:
             DialogManager dm = FindObjectOfType<DialogManager>();
             if (!dm.IsDialogActive)
-                dm.StartDialog(Dialogs.Test_Dialog);
+                dm.StartDialog(Dialogs.TestDialogListe);
             else
                 dm.NextTextInDialog();
         }
