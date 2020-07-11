@@ -2,16 +2,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [ExecuteAlways]
 public class Building : MonoBehaviour
 {
     public SpriteRenderer Renderer;
     public SpriteMask MaskRenderer;
+    
     public Transform MaskUp;
     public Transform MaskFront;
-    public Interactable Door;
     
+    public Interactable Door;
+
+    void Start()
+    {
+        Door.OnInteracting += DoorOnInteracting;
+    }
+
     private void Update()
     {
         var sortingFront = Mathf.RoundToInt(Renderer.transform.position.y * 100f) * -1;
@@ -27,5 +35,16 @@ public class Building : MonoBehaviour
     {
         Renderer = this.GetComponentInChildren<SpriteRenderer>();
         MaskRenderer = this.GetComponentInChildren<SpriteMask>();
+    }
+    
+    private void DoorOnInteracting()
+    {
+        OutOfControlCamera.Current.FadeOut(() =>
+        {
+            SceneManager.LoadSceneAsync("BuildingRoom", LoadSceneMode.Additive).completed += operation =>
+            {
+
+            };
+        });
     }
 }
