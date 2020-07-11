@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 public class OutOfControlCamera : MonoBehaviour
 {
     public Camera OwnCamera;
+    public Transform OwnTransform;
     public static OutOfControlCamera Current;
     
     private void Start()
