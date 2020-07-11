@@ -1297,6 +1297,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9a688f8b7203f4e80a3398dc8fa3a5, type: 3}
+--- !u!1001 &2023971483373193898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300804, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606060424248300808, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_Name
+      value: Space Building
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 063c1d3c5ef142843bcc33312bc7932f, type: 3}
 --- !u!1001 &2972342267384465697
 PrefabInstance:
   m_ObjectHideFlags: 0
