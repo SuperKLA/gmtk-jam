@@ -37,12 +37,7 @@ public class CharacterInput : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            //DialogTest:
-            DialogManager dm = FindObjectOfType<DialogManager>();
-            if (!dm.IsDialogActive)
-                dm.StartDialog(Dialogs.Dialog22);
-            else
-                dm.NextTextInDialog();
+            //TODO: EVENT FEUERN
         }
         
         OwnAnimator.SetFloat(Speed1, Mathf.Clamp01(moveDir.sqrMagnitude));
