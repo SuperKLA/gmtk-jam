@@ -10,6 +10,8 @@ public class World : MonoBehaviour
     public BuildingData BuildingEnterData;
     public Building PlayersHome;
     public Character Player;
+    public AudioSource DoorOpen;
+    public AudioSource DoorClose;
 
     void Start()
     {
@@ -21,10 +23,12 @@ public class World : MonoBehaviour
     {
         OutOfControlCamera.Current.OwnTransform.parent = null;
         BuildingEnterData = data;
+        this.DoorOpen.Play();
     }
 
     public void OnBuildLeft()
     {
+        this.DoorClose.Play();
         Character.Current.SetCharacterOn(this.BuildingEnterData.DoorPosition);
         Character.Current.SetCharacterLayer(LayerMask.NameToLayer("Player"));
         Character.Current.SetCameraOffset(OutOfControlCamera.Current.OwnTransform);
