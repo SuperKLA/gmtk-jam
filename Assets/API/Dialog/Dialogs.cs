@@ -16,9 +16,6 @@ static class Dialogs
 
     public static StoryInteractor nextInteractor =  StoryInteractor.GAME_START;
 
-
-
-
     #region Act 1
     public static Queue<DialogText> Dialog11
     {
