@@ -76,6 +76,7 @@
      <Compile Include="Assets\API\GameLoader.cs" />
      <Compile Include="Assets\API\GameRunTime.cs" />
      <Compile Include="Assets\API\Interactable.cs" />
+     <Compile Include="Assets\API\InteractorScripts\StoryInteractorScript.cs" />
      <Compile Include="Assets\API\MonoBehaviourExtensions.cs" />
      <Compile Include="Assets\API\NPC.cs" />
      <Compile Include="Assets\API\OutOfControlCamera.cs" />

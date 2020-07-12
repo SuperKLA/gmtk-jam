@@ -1,20 +1,25 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using API.InteractorScripts;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class BuildingRoom : MonoBehaviour
 {
+    public static BuildingRoom Current;
+    
     public Interactable ExitDoor;
     public GameObject SpawnPosition;
     public BuildingRoomCamera BuildingRoomCamera;
     public bool CanExitRoom = false;
     public Interactive AutoInteractTrigger;
+    public StoryInteractorScript StoryInteractorScript;
     
     private void Start()
     {
+        Current = this;
         ExitDoor.OnInteracting += DoorOnExit;
         this.CanExitRoom = !this.ExitDoor.IsInBounds(Character.Current.OwnCollider.bounds);
         
