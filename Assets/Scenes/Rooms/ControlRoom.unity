@@ -353,6 +353,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: ControlRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 3821714740457983474, guid: 6168f9a093403c54aa701fc7b0d37b85,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -32.393215
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821714740457983474, guid: 6168f9a093403c54aa701fc7b0d37b85,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: -32.393215
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821714740457983474, guid: 6168f9a093403c54aa701fc7b0d37b85,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: -32.393215
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6168f9a093403c54aa701fc7b0d37b85, type: 3}
 --- !u!224 &1540136865 stripped
@@ -591,16 +606,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3288622643173535283, guid: aec900ae7bc684fc5929e80fb719b0aa,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 186
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288622643713370139, guid: aec900ae7bc684fc5929e80fb719b0aa,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 186
-      objectReference: {fileID: 0}
     - target: {fileID: 3288622643801707060, guid: aec900ae7bc684fc5929e80fb719b0aa,
         type: 3}
       propertyPath: m_Name
@@ -609,12 +614,12 @@ PrefabInstance:
     - target: {fileID: 3288622643801707071, guid: aec900ae7bc684fc5929e80fb719b0aa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.17
+      value: -0.31
       objectReference: {fileID: 0}
     - target: {fileID: 3288622643801707071, guid: aec900ae7bc684fc5929e80fb719b0aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.86
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 3288622643801707071, guid: aec900ae7bc684fc5929e80fb719b0aa,
         type: 3}
