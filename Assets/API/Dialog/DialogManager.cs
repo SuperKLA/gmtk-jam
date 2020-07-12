@@ -10,7 +10,7 @@ public class DialogManager : MonoBehaviour
     private bool dialogActive = false;
     private Queue<DialogText> currentDialog;
 
-    public Image dialogImage;
+    public GameObject dialogImage;
     public TMP_Text speakerText;
     public TMP_Text dialogText;
 
@@ -88,7 +88,7 @@ public class DialogManager : MonoBehaviour
             DialogText nextDialog = currentDialog.Dequeue();
             speakerText.text = nextDialog.Speaker;
             dialogText.text = nextDialog.Text;
-            dialogImage.gameObject.SetActive(true);
+            dialogImage.SetActive(true);
         }
         else
         {

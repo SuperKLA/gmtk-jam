@@ -295,9 +295,6 @@ F:\Repositorys\gmtk_jam\gmtk-jam\obj\Debug\Assembly-CSharp.dll
 F:\Repositorys\gmtk_jam\gmtk-jam\obj\Debug\Assembly-CSharp.pdb
 F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Editor.pdb
 F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Runtime.pdb
-F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\nunit.framework.dll
-F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\nunit.framework.pdb
-F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\nunit.framework.xml
 F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\com.unity.quicksearch.dll
 F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\PsdPlugin.dll
 F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.2D.Animation.Editor.dll
