@@ -37,13 +37,39 @@ public class TerminalControl : MonoBehaviour
     public TerminalBuilding CTRL;
     public TerminalBuilding ALT;
     public TerminalBuilding SPACE;
+    public TerminalBuilding ENTER;
     #endregion TerminalBuildings
+
+    private void Start()
+    {
+        if (Dialogs.currentAct == Akt.Akt1)
+            StartAct1();
+        if (Dialogs.currentAct == Akt.Akt2)
+            StartAct2();
+        if (Dialogs.currentAct == Akt.Akt3)
+            StartAct3();
+    }
+    public void StartAct1()
+    {
+        N.state = BuildingState.ALERT;
+    }
+
+    public void StartAct2()
+    {
+        N.state = BuildingState.OK;
+        T.state = BuildingState.ALERT;
+    }
+
+    public void StartAct3()
+    {
+        T.state = BuildingState.OK;
+        P.state = BuildingState.ALERT;
+    }
 
     // Update is called once per frame
     void Update()
     {
         CheckBuildingKeys();
-
     }
 
     private void CheckBuildingKeys()
@@ -164,6 +190,10 @@ public class TerminalControl : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             tbp.SetNewTerminalBuilding(CTRL);
+        }
+        else if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            tbp.SetNewTerminalBuilding(ENTER);
         }
     }
 
