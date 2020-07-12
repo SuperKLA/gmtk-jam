@@ -3084,8 +3084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2783338b9e330ec4e8acc24b371b706b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  slider: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: 093703b4a0083594bb649405279666d9, type: 2}
+  slider: {fileID: 1187358902}
 --- !u!114 &1217420210 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 606060424248300805, guid: 063c1d3c5ef142843bcc33312bc7932f,
