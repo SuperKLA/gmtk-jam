@@ -11,7 +11,7 @@ static class QuestData
     {
         return new List<Quest>()
         {
-            new Quest(1, QuestState.Active,"Quest Bescheribung", Interactive.EnterHouse),
+           
         };
     }
 }
