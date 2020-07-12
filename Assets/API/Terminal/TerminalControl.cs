@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TerminalControl : MonoBehaviour
 {
-
     public TerminalBuildingDisplay tbp;
 
     #region TerminalBuildings
@@ -189,7 +188,7 @@ public class TerminalControl : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            tbp.SetNewTerminalBuilding(CTRL);
+            TerminalManager.Current.ShowOrCloseTerminal(false);
         }
         else if (Input.GetKeyDown(KeyCode.KeypadEnter))
         {
