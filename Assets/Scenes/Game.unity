@@ -1024,7 +1024,7 @@ MonoBehaviour:
   voice_R: {fileID: 8300000, guid: fc61279f6017846dba6c90da5db38cfe, type: 3}
   voice_S: {fileID: 8300000, guid: e3c2e60040439425c9800f0a9bb394e8, type: 3}
   voice_SHIFT: {fileID: 8300000, guid: d9358475caa484fe5a666e3480e24fd4, type: 3}
-  voice_SPACE: {fileID: 8300000, guid: 3ee4b68c18998439f91672e1b0eb82f5, type: 3}
+  voice_SPACE: {fileID: 8300000, guid: 11309be916e3e174fa0d1f94dc4dc4ad, type: 3}
   voice_T: {fileID: 8300000, guid: 0e7f8c34361ac482b9cbaf495c6424b2, type: 3}
   voice_Y: {fileID: 8300000, guid: 7f3535d6dd04446f380bdc8735a011a1, type: 3}
   openTerminalAfterDialog: 0
@@ -2242,7 +2242,7 @@ MonoBehaviour:
     spaceCount: 4
     wordCount: 4
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
