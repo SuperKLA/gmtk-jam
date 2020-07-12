@@ -1147,12 +1147,12 @@ PrefabInstance:
     - target: {fileID: 1756404297662859947, guid: 724a331be2a1145408a43d08605c9414,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 2065
+      value: 3617
       objectReference: {fileID: 0}
     - target: {fileID: 1756404298202696835, guid: 724a331be2a1145408a43d08605c9414,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 2065
+      value: 3617
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 724a331be2a1145408a43d08605c9414, type: 3}
@@ -3245,11 +3245,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 278528439}
     m_Modifications:
-    - target: {fileID: 5830142183033527695, guid: 208b5c7f71148444e9f3d4ca0866adaf,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1984
-      objectReference: {fileID: 0}
     - target: {fileID: 5830142183994990979, guid: 208b5c7f71148444e9f3d4ca0866adaf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3309,16 +3304,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: P NPC Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 5830142183994990984, guid: 208b5c7f71148444e9f3d4ca0866adaf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5830142184644844455, guid: 208b5c7f71148444e9f3d4ca0866adaf,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1984
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 208b5c7f71148444e9f3d4ca0866adaf, type: 3}

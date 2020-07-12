@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
-
     private bool dialogActive = false;
     private Queue<DialogText> currentDialog;
 
@@ -60,6 +59,7 @@ public class DialogManager : MonoBehaviour
                 break;
             case StoryInteractor.K_IFR_P:
                 World.Current.WorldAnimator.Play("Y_IFR_TEAHOUSE");
+                World.ShowY = true;
                 break;
             case StoryInteractor.K_IFR_K_SHOP:
                 World.Current.WorldAnimator.Play("K_IFR_K_SHOP");

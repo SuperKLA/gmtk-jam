@@ -93,6 +93,7 @@
      <Compile Include="Assets\API\Terminal\TerminalBuildingDisplay.cs" />
      <Compile Include="Assets\API\Terminal\TerminalControl.cs" />
      <Compile Include="Assets\API\World.cs" />
+     <Compile Include="Assets\API\YSpawn.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Model\FadeOut.shader" />
