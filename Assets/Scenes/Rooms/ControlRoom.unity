@@ -353,16 +353,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ControlRoom
       objectReference: {fileID: 0}
-    - target: {fileID: 3821714739884178316, guid: 6168f9a093403c54aa701fc7b0d37b85,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 3821714739884178316, guid: 6168f9a093403c54aa701fc7b0d37b85,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.25
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6168f9a093403c54aa701fc7b0d37b85, type: 3}
 --- !u!224 &1540136865 stripped
