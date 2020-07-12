@@ -10,6 +10,7 @@ public class Interactable : MonoBehaviour
     
     public bool CanInteract = false;
     public BoxCollider2D OwnCollider;
+    public Interactive Interactive;
 
     public bool IsInBounds(Bounds bounds)
     {
@@ -31,7 +32,10 @@ public class Interactable : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space) && this.CanInteract)
         {
-            if (OnInteracting != null) OnInteracting();
+            if (OnInteracting != null)
+            {
+                OnInteracting();
+            }
         }
     }
 }
