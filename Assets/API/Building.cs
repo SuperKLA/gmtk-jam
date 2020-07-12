@@ -49,7 +49,8 @@ public class Building : MonoBehaviour
     private void DoorOnInteracting()
     {
         if (string.IsNullOrEmpty(this.RoomName)) return;
-        
+
+        Door.CanInteract = false;
         World.Current.OnBuildEnter(new BuildingData()
         {
             DoorPosition = this.DoorExitSpawn.transform.position

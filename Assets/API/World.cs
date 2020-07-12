@@ -16,7 +16,17 @@ public class World : MonoBehaviour
     void Start()
     {
         Current = this;
-        this.Player.SetCharacterOn(PlayersHome.DoorExitSpawn.transform.position);
+        
+        World.Current.OnBuildEnter(new BuildingData()
+        {
+            DoorPosition = PlayersHome.DoorExitSpawn.transform.position
+        });
+        
+        OutOfControlCamera.Current.SwitchOff();
+        SceneManager.LoadSceneAsync("PlayerHome", LoadSceneMode.Additive).completed += operation =>
+        {
+            GameRunTime.Current.Setup();
+        };
     }
     
     public void OnBuildEnter( BuildingData data)

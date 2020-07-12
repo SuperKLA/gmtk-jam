@@ -11,6 +11,7 @@ public class BuildingRoom : MonoBehaviour
     public GameObject SpawnPosition;
     public BuildingRoomCamera BuildingRoomCamera;
     public bool CanExitRoom = false;
+    public Interactive AutoInteractTrigger;
     
     private void Start()
     {
@@ -21,6 +22,9 @@ public class BuildingRoom : MonoBehaviour
         Character.Current.SetCharacterLayer(LayerMask.NameToLayer("BuildingRoom"));
         
         Character.Current.CharacterInput.OnMove += CharacterInputOnOnMove;
+        
+        if(AutoInteractTrigger != Interactive.Start)
+            GameRunTime.Current.EventTriggert(AutoInteractTrigger);
     }
 
     private void CharacterInputOnOnMove()

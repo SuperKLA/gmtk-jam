@@ -9,10 +9,14 @@ public class OutOfControlCamera : MonoBehaviour
     public Camera OwnCamera;
     public Transform OwnTransform;
     public static OutOfControlCamera Current;
-    
-    private void Start()
+
+    private void Awake()
     {
         Current = this;
+    }
+
+    private void Start()
+    {
         FadeIn();
     }
 
@@ -23,6 +27,11 @@ public class OutOfControlCamera : MonoBehaviour
             this.gameObject.SetActive(false);
             fadeOut();
         });
+    }
+    
+    public void SwitchOff()
+    {
+        this.gameObject.SetActive(false);
     }
 
 

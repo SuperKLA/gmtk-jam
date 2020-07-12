@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
 
     public static Character Current;
 
-    private void Start()
+    private void Awake()
     {
         Current = this;
     }

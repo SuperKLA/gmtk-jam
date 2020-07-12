@@ -9,6 +9,7 @@ public class NPC : MonoBehaviour
 {
     public List<SpriteRenderer> OwnSorting;
     public Interactable ActionSpace;
+    public Interactive trigger;
 
     void Start()
     {
@@ -40,6 +41,6 @@ public class NPC : MonoBehaviour
     
     private void OnInteracting()
     {
-        
+        GameRunTime.Current.EventTriggert(trigger);
     }
 }

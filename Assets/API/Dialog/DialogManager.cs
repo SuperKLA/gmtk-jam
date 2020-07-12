@@ -19,7 +19,7 @@ public class DialogManager : MonoBehaviour
 
     public static DialogManager Current;
 
-    private void Start()
+    private void Awake()
     {
         Current = this;
     }

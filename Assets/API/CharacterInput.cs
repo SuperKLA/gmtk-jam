@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CharacterInput : MonoBehaviour
 {
+    DialogManager DM { get { return DialogManager.Current; } }
+    
     public Animator OwnAnimator;
     public Rigidbody2D OwnRigidBody;
     public float Speed = 1f;
@@ -37,7 +39,8 @@ public class CharacterInput : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            //TODO: EVENT FEUERN
+            if (DM.IsDialogActive)
+                DM.NextTextInDialog();
         }
         
         OwnAnimator.SetFloat(Speed1, Mathf.Clamp01(moveDir.sqrMagnitude));
