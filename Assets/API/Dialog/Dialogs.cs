@@ -305,7 +305,7 @@ static class Dialogs
     {
         get
         {
-            return CreateQueue(new List<DialogText>() {  new DialogText("D:","TRASHED!"),
+            return CreateQueue(new List<DialogText>() {  new DialogText("R:","TRASHED!"),
             });
         }
     }
