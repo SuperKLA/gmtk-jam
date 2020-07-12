@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: R
   m_EditorClassIdentifier: 
   name: Roadhouse
-  image: {fileID: 21300000, guid: 68cc33ee4318aea4da6eb841f0a256d6, type: 3}
+  image: {fileID: 21300000, guid: 8bf4a1ed11dc474449dde5d172eb2677, type: 3}
   state: 0

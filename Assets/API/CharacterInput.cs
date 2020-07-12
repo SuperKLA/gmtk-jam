@@ -35,12 +35,7 @@ public class CharacterInput : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            //DialogTest:
-            DialogManager dm = FindObjectOfType<DialogManager>();
-            if (!dm.IsDialogActive)
-                dm.StartDialog(Dialogs.Dialog22);
-            else
-                dm.NextTextInDialog();
+            //TODO: EVENT FEUERN
         }
         
         moveDir.x = Mathf.Clamp(moveDir.x, -this.Speed, this.Speed);
