@@ -73,6 +73,7 @@
      <Compile Include="Assets\API\Dialog\Dialogs.cs" />
      <Compile Include="Assets\API\DontDestroy.cs" />
      <Compile Include="Assets\API\DragTransform.cs" />
+     <Compile Include="Assets\API\FinalScreen.cs" />
      <Compile Include="Assets\API\GameLoader.cs" />
      <Compile Include="Assets\API\GameRunTime.cs" />
      <Compile Include="Assets\API\Interactable.cs" />

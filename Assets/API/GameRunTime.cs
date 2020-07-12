@@ -127,6 +127,7 @@ public class GameRunTime : MonoBehaviour
                     TriggerDialog(Dialogs.Idle_L);
                 break;
             case Interactive.EnterEnter:
+                FinalScreen.Current.Show();
                 break;
             default:
                 break;
