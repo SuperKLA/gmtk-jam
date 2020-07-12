@@ -874,6 +874,7 @@ GameObject:
   - component: {fileID: 361327673}
   - component: {fileID: 361327672}
   - component: {fileID: 361327676}
+  - component: {fileID: 361327677}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -977,7 +978,118 @@ MonoBehaviour:
   dialogImage: {fileID: 730341396}
   speakerText: {fileID: 1004277725}
   dialogText: {fileID: 785641435}
+  audioSource: {fileID: 361327677}
+  voice_D: {fileID: 8300000, guid: cca15257796fb47b0b9d47118383466c, type: 3}
+  voice_GG: {fileID: 8300000, guid: e0899741f15314842b96fb0119eeac13, type: 3}
+  voice_J: {fileID: 8300000, guid: 0456eb2163d954501a65176d181d0301, type: 3}
+  voice_K: {fileID: 8300000, guid: 551b13a65459049d0be650bac4466d49, type: 3}
+  voice_L: {fileID: 8300000, guid: a9104e96b1c5d4917bfdc29bbe2467ef, type: 3}
+  voice_N: {fileID: 8300000, guid: 44845d6db5ab847c0b1be39a2c4fbefc, type: 3}
+  voice_P: {fileID: 8300000, guid: a2f4241bfcf8e44c2a0219d8941ec5bb, type: 3}
+  voice_R: {fileID: 8300000, guid: fc61279f6017846dba6c90da5db38cfe, type: 3}
+  voice_S: {fileID: 8300000, guid: e3c2e60040439425c9800f0a9bb394e8, type: 3}
+  voice_SHIFT: {fileID: 8300000, guid: d9358475caa484fe5a666e3480e24fd4, type: 3}
+  voice_SPACE: {fileID: 8300000, guid: 3ee4b68c18998439f91672e1b0eb82f5, type: 3}
+  voice_T: {fileID: 8300000, guid: 0e7f8c34361ac482b9cbaf495c6424b2, type: 3}
+  voice_Y: {fileID: 8300000, guid: 7f3535d6dd04446f380bdc8735a011a1, type: 3}
   openTerminalAfterDialog: 0
+--- !u!82 &361327677
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361327671}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 8999617685913367803, guid: 093703b4a0083594bb649405279666d9,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &379187145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2070,7 +2182,7 @@ MonoBehaviour:
     spaceCount: 4
     wordCount: 4
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -3196,7 +3308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -5584,10 +5696,14 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 6400
       objectReference: {fileID: 0}
+    - target: {fileID: 1661873580, guid: af9a688f8b7203f4e80a3398dc8fa3a5, type: 3}
+      propertyPath: orthographic size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1702528586635197441, guid: af9a688f8b7203f4e80a3398dc8fa3a5,
         type: 3}
       propertyPath: Speed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1702528586635197446, guid: af9a688f8b7203f4e80a3398dc8fa3a5,
         type: 3}
@@ -5648,6 +5764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128974399136931366, guid: af9a688f8b7203f4e80a3398dc8fa3a5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9a688f8b7203f4e80a3398dc8fa3a5, type: 3}
