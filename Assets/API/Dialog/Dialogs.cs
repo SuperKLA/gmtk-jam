@@ -250,7 +250,7 @@ static class Dialogs
     {
         get
         {
-            return CreateQueue(new List<DialogText>() {  new DialogText("J:","I still hate him"),
+            return CreateQueue(new List<DialogText>() {  new DialogText("J:","I hate him"),
             });
         }
     }
@@ -258,7 +258,7 @@ static class Dialogs
     {
         get
         {
-            return CreateQueue(new List<DialogText>() {  new DialogText("K:","Thanks for your help"),
+            return CreateQueue(new List<DialogText>() {  new DialogText("K:","Hey, what´s up?"),
             });
         }
     }
@@ -266,7 +266,7 @@ static class Dialogs
     {
         get
         {
-            return CreateQueue(new List<DialogText>() {  new DialogText("L:","He's still a dumbass!"),
+            return CreateQueue(new List<DialogText>() {  new DialogText("L:","He's a dumbass!"),
             });
         }
     }

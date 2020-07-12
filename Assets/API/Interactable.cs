@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
+    public bool keySpaceFire = false;
     public event Action OnInteracting;
     public event Action OnInteractableLeft;
-    
+
     public bool CanInteract = false;
     public BoxCollider2D OwnCollider;
 
@@ -15,7 +16,7 @@ public class Interactable : MonoBehaviour
     {
         return OwnCollider.bounds.Intersects(bounds);
     }
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         CanInteract = true;
@@ -29,8 +30,9 @@ public class Interactable : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space) && this.CanInteract)
+        if (Input.GetKeyUp(KeyCode.Space) && this.CanInteract && GameRunTime.SpaceUPCanFire)
         {
+            GameRunTime.SpaceUPCanFire = false;
             if (OnInteracting != null)
             {
                 OnInteracting();
