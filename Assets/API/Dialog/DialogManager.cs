@@ -177,7 +177,10 @@ public class DialogManager : MonoBehaviour
         }
 
         if (clipToPlay != null)
+        {
+            audioSource.Stop();
             audioSource.PlayOneShot(clipToPlay);
+        }
     }
 
 }
