@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using API.InteractorScripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,8 @@ public class World : MonoBehaviour
     public Character Player;
     public AudioSource DoorOpen;
     public AudioSource DoorClose;
+    public StoryInteractorScript WorldAnimator;
+    public static bool ShowY;
 
     void Start()
     {
