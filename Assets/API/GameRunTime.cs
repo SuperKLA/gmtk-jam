@@ -7,13 +7,13 @@ public class GameRunTime : MonoBehaviour
     DialogManager DM { get { return DialogManager.Current; } }
     public static GameRunTime Current;
     public static bool SpaceUPCanFire = false;
-    public static bool ConsoleOpen = false;
-    
+    public static bool TerminalOpen = false;
+
     private void Awake()
     {
         Current = this;
     }
-    
+
     public void Setup()
     {
         EventTriggert(Interactive.Start);
@@ -39,7 +39,11 @@ public class GameRunTime : MonoBehaviour
                 if (Dialogs.nextInteractor == StoryInteractor.TERMINAL_START)
                     TriggerDialog(Dialogs.Dialog13);
                 else
+                {
                     TriggerDialog(null);
+                    if (!DM.IsDialogActive)
+                        OpenOrCloseTerminal(!TerminalOpen);
+                }
                 break;
             case Interactive.N:
                 if (Dialogs.nextInteractor == StoryInteractor.N_IFR_POWER_PLANT_FIRST_TIME)
@@ -94,7 +98,7 @@ public class GameRunTime : MonoBehaviour
                     TriggerDialog(Dialogs.Dialog33);
                 else if (Dialogs.nextInteractor == StoryInteractor.P_IFR_BAR)
                     TriggerDialog(Dialogs.Dialog35);
-                else if(Dialogs.nextInteractor == StoryInteractor.K_TALK_TO_K_D_J_L)
+                else if (Dialogs.nextInteractor == StoryInteractor.K_TALK_TO_K_D_J_L)
                     TriggerDialog(Dialogs.Dialog36);
                 else
                     TriggerDialog(Dialogs.Idle_P);
@@ -134,6 +138,13 @@ public class GameRunTime : MonoBehaviour
         else
             DM.NextTextInDialog();
     }
+
+    public void OpenOrCloseTerminal(bool value)
+    {
+        TerminalOpen = value;
+        TerminalManager.Current.ShowOrCloseTerminal(value);
+    }
+
 
 }
 
