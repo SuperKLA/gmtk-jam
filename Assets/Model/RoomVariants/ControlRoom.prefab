@@ -7,25 +7,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5021175957543600117, guid: 8524f29d3eed3ac4ab6b9d5e6810335d,
+        type: 3}
+      propertyPath: AutoInteractTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5021175957937356029, guid: 8524f29d3eed3ac4ab6b9d5e6810335d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 10.157728
+      value: -32.393215
       objectReference: {fileID: 0}
     - target: {fileID: 5021175957937356029, guid: 8524f29d3eed3ac4ab6b9d5e6810335d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 10.157728
+      value: -32.393215
       objectReference: {fileID: 0}
     - target: {fileID: 5021175957937356029, guid: 8524f29d3eed3ac4ab6b9d5e6810335d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 10.157728
+      value: -32.393215
       objectReference: {fileID: 0}
     - target: {fileID: 6236471277741896851, guid: 8524f29d3eed3ac4ab6b9d5e6810335d,
         type: 3}
       propertyPath: m_Name
-      value: RoomMaster
+      value: ControlRoom
       objectReference: {fileID: 0}
     - target: {fileID: 9065938066205527306, guid: 8524f29d3eed3ac4ab6b9d5e6810335d,
         type: 3}

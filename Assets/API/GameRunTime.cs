@@ -5,7 +5,14 @@ using UnityEngine;
 public class GameRunTime : MonoBehaviour
 {
     DialogManager DM { get { return DialogManager.Current; } }
-    void Start()
+    public static GameRunTime Current;
+    
+    private void Awake()
+    {
+        Current = this;
+    }
+    
+    public void Setup()
     {
         EventTriggert(Interactive.Start);
     }
