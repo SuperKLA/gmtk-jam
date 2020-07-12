@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Rooms/P Room.unity
     guid: f6c4a4075c531ed44834108f6b323690
   - enabled: 1
+    path: Assets/Scenes/Rooms/EnterRoom.unity
+    guid: deab3cfc10e43014fa6fab4cb4870752
+  - enabled: 1
     path: Assets/Scenes/Rooms/S Room.unity
     guid: e1b128f4a77fa7145ac9dd43da91fd69
   - enabled: 1

@@ -10,7 +10,6 @@ public class Interactable : MonoBehaviour
     
     public bool CanInteract = false;
     public BoxCollider2D OwnCollider;
-    public Interactive Interactive;
 
     public bool IsInBounds(Bounds bounds)
     {
