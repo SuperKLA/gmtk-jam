@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\API\Audio.cs" />
      <Compile Include="Assets\API\Boat.cs" />
      <Compile Include="Assets\API\Building.cs" />
      <Compile Include="Assets\API\BuildingRoom.cs" />
@@ -85,12 +86,12 @@
      <Compile Include="Assets\API\Quest\QuestState.cs" />
      <Compile Include="Assets\API\Ruder.cs" />
      <Compile Include="Assets\API\ScaleFitScreen.cs" />
+     <Compile Include="Assets\API\StoryInteractor.cs" />
      <Compile Include="Assets\API\Terminal\BuildingState.cs" />
      <Compile Include="Assets\API\Terminal\TerminalBuilding.cs" />
      <Compile Include="Assets\API\Terminal\TerminalBuildingDisplay.cs" />
      <Compile Include="Assets\API\Terminal\TerminalControl.cs" />
      <Compile Include="Assets\API\World.cs" />
-     <Compile Include="Assets\StoryInteractor.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Model\FadeOut.shader" />

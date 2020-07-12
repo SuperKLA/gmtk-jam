@@ -102,6 +102,11 @@ PrefabInstance:
       propertyPath: OwnSorting.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3579032334918528122, guid: e38be33004ab4ab48adb6a83c1583294,
+        type: 3}
+      propertyPath: trigger
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3579032335829815362, guid: e38be33004ab4ab48adb6a83c1583294,
         type: 3}
       propertyPath: m_SortingOrder
