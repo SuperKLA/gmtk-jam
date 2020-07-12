@@ -309,6 +309,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 208b5c7f71148444e9f3d4ca0866adaf, type: 3}
+--- !u!1 &1918217330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5830142183994990984, guid: 208b5c7f71148444e9f3d4ca0866adaf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1918217329}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1918217331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918217330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4638e4b25c9c4610aa570da0a961ae53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &944440284501325370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -320,6 +338,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: R Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908056982712624880, guid: 6043def8816ba4a459c9fab0b2e7a06b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -32.374477
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908056982712624880, guid: 6043def8816ba4a459c9fab0b2e7a06b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: -32.374477
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908056982712624880, guid: 6043def8816ba4a459c9fab0b2e7a06b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: -32.374477
       objectReference: {fileID: 0}
     - target: {fileID: 7603132575905945351, guid: 6043def8816ba4a459c9fab0b2e7a06b,
         type: 3}

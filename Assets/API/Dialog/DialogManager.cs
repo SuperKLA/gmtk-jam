@@ -93,9 +93,13 @@ public class DialogManager : MonoBehaviour
                 break;
             case StoryInteractor.P_IFR_BAR:
                 World.Current.WorldAnimator.Play("D_IFR_VET");
+                World.ShowPOutside = true;
                 break;
             case StoryInteractor.K_TALK_TO_K_D_J_L:
                 World.Current.WorldAnimator.Play("K_TALK_TO_K_D_J_L 2");
+                break;
+            case StoryInteractor.ENTER_ENTER:
+                FinalScreen.Current.Show();
                 break;
         }
     }
