@@ -740,6 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1.4
+  _mtl: {fileID: 2100000, guid: f26703370faaa194f953ba63f313540b, type: 2}
 --- !u!114 &5021175958774029493
 MonoBehaviour:
   m_ObjectHideFlags: 0

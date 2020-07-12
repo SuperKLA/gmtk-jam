@@ -1,4 +1,4 @@
-﻿Shader "Hidden/Circle"
+﻿Shader "Custom/FadeCircle"
 {
 	Properties
 	{

@@ -38,20 +38,9 @@ public class CameraCircleFade : MonoBehaviour
     public float radius;
 
     float    _radius;
-    Material _mtl;
+    public Material _mtl;
 
-    Material mtl
-    {
-        get
-        {
-            if (_mtl) return _mtl;
-            else
-            {
-                _mtl = new Material(Shader.Find("Hidden/Circle"));
-                return _mtl;
-            }
-        }
-    }
+   
 
     void Start()
     {
@@ -68,7 +57,7 @@ public class CameraCircleFade : MonoBehaviour
         
         if (_radius != radius)
         {
-            mtl.SetFloat("_Radius", radius);
+            _mtl.SetFloat("_Radius", radius);
             // Debug.Log("Setting radius to " + radius);
             _radius = radius;
         }
@@ -76,7 +65,7 @@ public class CameraCircleFade : MonoBehaviour
 
     void OnRenderImage(RenderTexture src, RenderTexture dst)
     {
-        Graphics.Blit(src, dst, mtl);
+        Graphics.Blit(src, dst, _mtl);
     }
 }
 
