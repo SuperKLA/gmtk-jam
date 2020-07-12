@@ -371,37 +371,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: CalenderTrigger
       objectReference: {fileID: 0}
-    - target: {fileID: 3734474948115701861, guid: a1125667504403c479cc10fd7a482665,
-        type: 3}
-      propertyPath: OwnSorting.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3734474948115701861, guid: a1125667504403c479cc10fd7a482665,
-        type: 3}
-      propertyPath: OwnSorting.Array.data[0]
-      value: 
-      objectReference: {fileID: 7406532479447835188}
-    - target: {fileID: 3734474948115701861, guid: a1125667504403c479cc10fd7a482665,
-        type: 3}
-      propertyPath: OwnSorting.Array.data[1]
-      value: 
-      objectReference: {fileID: 7406532479447835187}
-    - target: {fileID: 3734474948115701861, guid: a1125667504403c479cc10fd7a482665,
-        type: 3}
-      propertyPath: trigger
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1125667504403c479cc10fd7a482665, type: 3}
---- !u!212 &7406532479447835187 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 3734474948027357813, guid: a1125667504403c479cc10fd7a482665,
-    type: 3}
-  m_PrefabInstance: {fileID: 7406532479447835186}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &7406532479447835188 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 3734474947489782877, guid: a1125667504403c479cc10fd7a482665,
-    type: 3}
-  m_PrefabInstance: {fileID: 7406532479447835186}
-  m_PrefabAsset: {fileID: 0}
