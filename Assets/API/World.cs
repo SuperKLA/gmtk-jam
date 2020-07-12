@@ -15,6 +15,7 @@ public class World : MonoBehaviour
     public AudioSource DoorClose;
     public StoryInteractorScript WorldAnimator;
     public static bool ShowY;
+    public static bool ShowPOutside;
 
     void Start()
     {
