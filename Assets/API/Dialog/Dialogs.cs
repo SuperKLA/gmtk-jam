@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 static class Dialogs
 {
+    public static Akt currentAct = Akt.Akt1;
+
     #region Act 1
     public static Queue<DialogText> Dialog11
     {
@@ -78,8 +80,7 @@ static class Dialogs
     {
         get
         {
-            //Plant nicht mehr blinken => T blinkt jetzt
-
+            currentAct = Akt.Akt2;
             return CreateQueue(new List<DialogText>() {  new DialogText("N:", "Yo! Thanks! That's what we need!"),
                                                          new DialogText("N:","Weird. The old circuit isn't burned. It's missing a capacitor. This shouldn't have worked in the first place. Someone <b>manipulated</b> it...")
 
@@ -138,7 +139,7 @@ static class Dialogs
     {
         get
         {
-            //T blinkt nicht mehr => P blinkt jetzt
+            currentAct = Akt.Akt3;
             return CreateQueue(new List<DialogText>() {  new DialogText("T:","Well, it’s back to work then."),
             });
         }
@@ -150,7 +151,7 @@ static class Dialogs
     {
         get
         {
-            //T blinkt nicht mehr => P blinkt jetzt
+            
             return CreateQueue(new List<DialogText>() {  new DialogText("K:","Where is the <b>help</b> when you <b>need</b> it. I’m wasting my taxes here."),
             });
         }
