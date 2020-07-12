@@ -30,9 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Rooms/Shift Room.unity
     guid: 251fea2c758c88e449fb7085a4f3119f
   - enabled: 1
-    path: Assets/Scenes/Rooms/T Room.unity
-    guid: c1d9bc70493e8ab4a976507351902b3a
-  - enabled: 1
     path: Assets/Scenes/Rooms/Y Room.unity
     guid: 05b5ec2f2225c2248a0256fed4bc7d85
+  - enabled: 1
+    path: Assets/Scenes/Rooms/R Room.unity
+    guid: a2614b49da3650b48860803bacc6a316
   m_configObjects: {}
