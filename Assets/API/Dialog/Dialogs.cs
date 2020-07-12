@@ -8,14 +8,16 @@ using System.Threading.Tasks;
 static class Dialogs
 {
     public static Akt currentAct = Akt.Akt1;
+    public static StoryInteractor nextInteractor =  StoryInteractor.GAME_START;
 
     #region Act 1
     public static Queue<DialogText> Dialog11
     {
         get
         {
-            return CreateQueue(new List<DialogText>() {  new DialogText("SPACE:", "Weird, the lights aren't working. Somethin's fishy!"),
-                                                         new DialogText("SPACE:", "I bet CTRL is already looking into it. Maybe he could use some help.")});
+            nextInteractor = StoryInteractor.CTRL_TOWER_SHIFT;
+            return CreateQueue(new List<DialogText>() {  new DialogText("SPACE:", "<i>Weird, the lights aren't working. Somethin's fishy!</i>"),
+                                                         new DialogText("SPACE:", "<i>I bet CTRL is already looking into it. Maybe he could use some help.</i>")});
         }
     }
 
@@ -23,6 +25,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.TERMINAL_START;
             return CreateQueue(new List<DialogText>() {  new DialogText("SPACE:", "SHIFT! Are you okay? What happened?"),
                                                          new DialogText("SHIFT:","Someone attacked us! They looked like us but different! They <b>kiddnaped</b> CTRL!"),
                                                          new DialogText("SPACE:","What? Where did they take him?"),
@@ -34,7 +37,9 @@ static class Dialogs
     public static Queue<DialogText> Dialog13
     {
         get
+
         {
+            nextInteractor = StoryInteractor.N_IFR_POWER_PLANT_FIRST_TIME;
             return CreateQueue(new List<DialogText>() {  new DialogText("", ">>Booting"),
                                                          new DialogText("",">>Starting Central Town Recovery Locator (C-T-R-L) v1.17"),
                                                          new DialogText("",">>Initializing Key Buildings"),
@@ -48,6 +53,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.S_IN_SHOP_TALKT_TO;
             return CreateQueue(new List<DialogText>() {  new DialogText("SPACE:", "Hey N! Have you seen CTRL? Someone <b>kidnapped</b> him!"),
                                                          new DialogText("N:","What? Are you sure? Dang... we need to find him. But right now we have to get the power supply running before everything gets even more out of hand."),
                                                          new DialogText("SPACE:","Can I help you somehow?"),
@@ -65,6 +71,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.N_IFR_POWER_PLANT_SECOND_TIME;
             return CreateQueue(new List<DialogText>() {  new DialogText("S:", "What're ya buyin?"),
                                                          new DialogText("SPACE:","I need this <b>BFC3000</b> thingy."),
                                                          new DialogText("S:","A Big F-kin Circuit 3000? Ya won't be able to afford it. Ya're just an empty SPACE!"),
@@ -80,6 +87,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.T_IFR_WITH_Y;
             currentAct = Akt.Akt2;
             return CreateQueue(new List<DialogText>() {  new DialogText("N:", "Yo! Thanks! That's what we need!"),
                                                          new DialogText("N:","Weird. The old circuit isn't burned. It's missing a capacitor. This shouldn't have worked in the first place. Someone <b>manipulated</b> it...")
@@ -97,6 +105,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.CALENDAR_AT_Y;
             return CreateQueue(new List<DialogText>() {  new DialogText("SPACE:","Hey T! I've seen an alert. Something's wrong?"),
                                                          new DialogText("T:","Do you really bother? You are just one of these <b>characters with nothing to do</b>... I refuse to open up as long as people like <b>Y</b> are sitting here doing nothing."),
                                                          new DialogText("SPACE:","Why is <b>Y</b> not opening up its place?"),
@@ -115,6 +124,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.Y_IFR_TEAHOUSE;
             return CreateQueue(new List<DialogText>() {  new DialogText("","<i>Let's see what happens, if I change the date to yesterday?</i>"),
                                                          new DialogText("","<i>What's that? There is an entry in the calendar:</i>"),
                                                          new DialogText("","<i>“<b>Strange characters</b> doing stranger things at the <b>east border</b> of the city.”</i>"),
@@ -127,21 +137,11 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.K_IFR_P;
             return CreateQueue(new List<DialogText>() {  new DialogText("Y:","I checked <b>my calendar at the YACHT-SHOP</b>, it’s today."),
-                                                         new DialogText("SPACE:","You should check it again, it seems to be yesterday already.")
-            });
-        }
-    }
-
-    //Y muss raus laufen.
-
-    public static Queue<DialogText> Dialog24
-    {
-        get
-        {
-            currentAct = Akt.Akt3;
-            return CreateQueue(new List<DialogText>() {  new DialogText("T:","Well, it’s back to work then."),
-            });
+                                                         new DialogText("SPACE:","You should check it again, it seems to be yesterday already."),
+                                                         new DialogText("T:","Well, it’s back to work then.")
+             });
         }
     }
     #endregion Act 2
@@ -151,7 +151,7 @@ static class Dialogs
     {
         get
         {
-            
+            nextInteractor = StoryInteractor.K_IFR_K_SHOP;
             return CreateQueue(new List<DialogText>() {  new DialogText("K:","Where is the <b>help</b> when you <b>need</b> it. I’m wasting my taxes here."),
             });
         }
@@ -161,6 +161,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.R_TALK_TO_R_OR_P;
             return CreateQueue(new List<DialogText>() {  new DialogText("SPACE:","Hey K, what in keys name is happening here?"),
                                                          new DialogText("K:","Oh, a space bar wants to be a police officer? You only make things..."),
                                                          new DialogText("J:","What’s your problem?!"),
@@ -181,6 +182,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.D_IFR_VET;
             return CreateQueue(new List<DialogText>() {  new DialogText("R:","You should really know when to stop. You R trashed!"),
                                                          new DialogText("P:","But it is the most important thing in my life!"),
                                                          new DialogText("SPACE:","What’s wrong officer?"),
@@ -196,6 +198,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.P_IFR_BAR;
             return CreateQueue(new List<DialogText>() {  new DialogText("SPACE:","Heyyy! Who’s a good key?"),
                                                          new DialogText("D-DOG:","I am not a key! I am dog! <b>Pet me!</b>"),
                                                          new DialogText("SPACE:","Oh pardon me... erm... O-key."),
@@ -209,6 +212,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.K_TALK_TO_K_D_J_L;
             return CreateQueue(new List<DialogText>() {  new DialogText("P:","You helped my dog. We thank you a lot! Now, where are the baddies?"),
                                                          new DialogText("SPACE:","At Key’s, but we need to hurry!"),
                                                          new DialogText("P:","KK, let’s go!")
@@ -221,6 +225,7 @@ static class Dialogs
     {
         get
         {
+            nextInteractor = StoryInteractor.ENTER_ENTER;
             return CreateQueue(new List<DialogText>() {  new DialogText("K:","I am glad you two came and helped!"),
                                                          new DialogText("D-DOG:","Three!"),
                                                          new DialogText("J:","L, I am sorry that I gave you just potheads. It will change in the future."),
@@ -321,8 +326,17 @@ static class Dialogs
             });
         }
     }
+    public static Queue<DialogText> Idle_Calendar
+    {
+        get
+        {
+            return CreateQueue(new List<DialogText>() {  new DialogText("","<i>Hmm..</i>"),
+            });
+        }
+    }
+
     #endregion IDLE
-    
+
 
     private static Queue<DialogText> CreateQueue(List<DialogText> list)
     {

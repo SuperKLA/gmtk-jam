@@ -7,6 +7,20 @@ using System.Threading.Tasks;
 
 public enum Interactive
 {
-    EnterHouse,
+    Start,
+    EnterCTRL,
+    StartTerminal,
+    N,
+    S,   
+    T,
+    CalenderInteract,
+    Y,
+    K,
+    R,
+    P,
+    D,
+    J,
+    L,
+    EnterEnter
 }
 

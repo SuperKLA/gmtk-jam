@@ -17,6 +17,14 @@ public class DialogManager : MonoBehaviour
 
     public bool IsDialogActive { get { return dialogActive; } }
 
+    public static DialogManager Current;
+
+    private void Start()
+    {
+        Current = this;
+    }
+
+
 
     public void StartDialog(Queue<DialogText> dialog)
     {

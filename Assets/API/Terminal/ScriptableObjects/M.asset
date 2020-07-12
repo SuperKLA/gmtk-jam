@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: M
   m_EditorClassIdentifier: 
   name: Building M
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: ccfec09edeb670b44a478edfc9b04696, type: 3}
   state: 0
