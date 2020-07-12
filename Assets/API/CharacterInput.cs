@@ -15,7 +15,7 @@ public class CharacterInput : MonoBehaviour
 
     public void Update()
     {
-        if (GameRunTime.ConsoleOpen)
+        if (GameRunTime.TerminalOpen)
             return;
 
         if (Input.GetKeyDown(KeyCode.Space))
