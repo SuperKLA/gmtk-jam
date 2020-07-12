@@ -181,8 +181,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1729219717
   m_SortingLayer: 1
-  m_SortingOrder: 1072
-  m_Sprite: {fileID: 21300000, guid: 117de9c9c5d6dec4f9a3cbaf5de1de93, type: 3}
+  m_SortingOrder: -67
+  m_Sprite: {fileID: 21300000, guid: 0b3bf6b7f75520e48a1d9b5106b828cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 1702528586635197440}
   - component: {fileID: 1702528586635197441}
   - component: {fileID: 5584347130501054187}
+  - component: {fileID: 1096067371133417983}
   m_Layer: 8
   m_Name: Character
   m_TagString: Untagged
@@ -282,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b95d06e508c947eda59ac241ea35f358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OwnAnimator: {fileID: 1096067371133417983}
   OwnRigidBody: {fileID: 1702528586635197442}
   Speed: 2
 --- !u!61 &5584347130501054187
@@ -310,6 +312,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.6812422}
   m_EdgeRadius: 0
+--- !u!95 &1096067371133417983
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702528586635197446}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d067d83aef6dd574f8ce8af460c114eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1702528587819106311
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,8 +400,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1729219717
   m_SortingLayer: 1
-  m_SortingOrder: 1072
-  m_Sprite: {fileID: 21300000, guid: 117de9c9c5d6dec4f9a3cbaf5de1de93, type: 3}
+  m_SortingOrder: -67
+  m_Sprite: {fileID: 21300000, guid: 0b3bf6b7f75520e48a1d9b5106b828cc, type: 3}
   m_Color: {r: 0, g: 0.70790744, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

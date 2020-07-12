@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class CharacterInput : MonoBehaviour
 {
+    public Animator OwnAnimator;
     public Rigidbody2D OwnRigidBody;
     public float Speed = 1f;
+    private static readonly int Speed1 = Animator.StringToHash("Speed");
     public event Action OnMove;
 
     public void Update()
@@ -42,6 +44,8 @@ public class CharacterInput : MonoBehaviour
             else
                 dm.NextTextInDialog();
         }
+        
+        OwnAnimator.SetFloat(Speed1, Mathf.Clamp01(moveDir.sqrMagnitude));
         
         moveDir.x = Mathf.Clamp(moveDir.x, -this.Speed, this.Speed);
         moveDir.y = Mathf.Clamp(moveDir.y, -this.Speed, this.Speed);
