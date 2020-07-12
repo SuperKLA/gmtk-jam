@@ -13,6 +13,7 @@ public class BuildingData
 public class Building : MonoBehaviour
 {
     public SpriteRenderer Renderer;
+    public SpriteRenderer Entrance;
     public SpriteMask MaskRenderer;
     
     public Transform MaskUp;
@@ -32,10 +33,12 @@ public class Building : MonoBehaviour
         var sortingFront = Mathf.RoundToInt(Renderer.transform.position.y * 100f) * -1;
         var sortingBack = Mathf.RoundToInt(MaskUp.position.y * 100f) * -1;
         var sortingFront2 = Mathf.RoundToInt(MaskFront.position.y * 100f) * -1;
+        var entrance = Mathf.RoundToInt(Entrance.transform.position.y * 100f) * -1;
         
         Renderer.sortingOrder = sortingFront;
         MaskRenderer.frontSortingOrder = sortingFront2;
         MaskRenderer.backSortingOrder = sortingBack;
+        Entrance.sortingOrder = entrance;
     }
 
     private void OnValidate()

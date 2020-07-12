@@ -323,6 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Renderer: {fileID: 4607331267334319563}
+  Entrance: {fileID: 1997391737166833558}
   MaskRenderer: {fileID: 4607331267334319562}
   MaskUp: {fileID: 4607331267347752986}
   MaskFront: {fileID: 4607331267879355232}
