@@ -94,6 +94,8 @@ public class GameRunTime : MonoBehaviour
                     TriggerDialog(Dialogs.Dialog33);
                 else if (Dialogs.nextInteractor == StoryInteractor.P_IFR_BAR)
                     TriggerDialog(Dialogs.Dialog35);
+                else if(Dialogs.nextInteractor == StoryInteractor.K_TALK_TO_K_D_J_L)
+                    TriggerDialog(Dialogs.Dialog36);
                 else
                     TriggerDialog(Dialogs.Idle_P);
                 break;
