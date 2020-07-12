@@ -15,34 +15,47 @@ public class CharacterInput : MonoBehaviour
 
     public void Update()
     {
+        if (GameRunTime.ConsoleOpen)
+            return;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameRunTime.SpaceUPCanFire = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space) && DialogManager.Current.IsDialogActive && GameRunTime.SpaceUPCanFire)
+        {
+            GameRunTime.SpaceUPCanFire = false;
+            DialogManager.Current.NextTextInDialog();
+        }
+
+        if (DialogManager.Current.IsDialogActive )
+            return;
+
         Vector2 moveDir = Vector2.zero;
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             moveDir.x = Speed;
         }
         
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             moveDir.x = -Speed;
         }
         
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             moveDir.y = Speed;
         }
         
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             moveDir.y = -Speed;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            if (DM.IsDialogActive)
-                DM.NextTextInDialog();
-        }
         
+
         OwnAnimator.SetFloat(Speed1, Mathf.Clamp01(moveDir.sqrMagnitude));
         
         moveDir.x = Mathf.Clamp(moveDir.x, -this.Speed, this.Speed);

@@ -6,6 +6,8 @@ public class GameRunTime : MonoBehaviour
 {
     DialogManager DM { get { return DialogManager.Current; } }
     public static GameRunTime Current;
+    public static bool SpaceUPCanFire = false;
+    public static bool ConsoleOpen = false;
     
     private void Awake()
     {
@@ -24,14 +26,20 @@ public class GameRunTime : MonoBehaviour
             case Interactive.Start:
                 if (Dialogs.nextInteractor == StoryInteractor.GAME_START)
                     TriggerDialog(Dialogs.Dialog11);
+                else
+                    TriggerDialog(null);
                 break;
             case Interactive.EnterCTRL:
                 if (Dialogs.nextInteractor == StoryInteractor.CTRL_TOWER_SHIFT)
                     TriggerDialog(Dialogs.Dialog12);
+                else
+                    TriggerDialog(null);
                 break;
             case Interactive.StartTerminal:
                 if (Dialogs.nextInteractor == StoryInteractor.TERMINAL_START)
                     TriggerDialog(Dialogs.Dialog13);
+                else
+                    TriggerDialog(null);
                 break;
             case Interactive.N:
                 if (Dialogs.nextInteractor == StoryInteractor.N_IFR_POWER_PLANT_FIRST_TIME)
