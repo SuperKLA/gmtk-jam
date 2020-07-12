@@ -36,7 +36,7 @@ public class BuildingRoom : MonoBehaviour
         
         BuildingRoomCamera.FadeOut(() =>
         {
-            SceneManager.UnloadSceneAsync("BuildingRoom").completed += operation =>
+            SceneManager.UnloadSceneAsync(gameObject.scene.name).completed += operation =>
             {
                 OutOfControlCamera.Current.FadeIn();
                 World.Current.OnBuildLeft();

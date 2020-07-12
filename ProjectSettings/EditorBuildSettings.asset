@@ -6,6 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Boot.unity
+    guid: f7995c4880a612b48bc86b31e7882fa2
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: b03124401da2a0446b6a5ba040d5886e
+  - enabled: 1
+    path: Assets/Scenes/Rooms/PlayerHome.unity
+    guid: e929e067b2da2b24687796ed6859ae1a
+  - enabled: 1
+    path: Assets/Scenes/Rooms/GenericRoom.unity
+    guid: 2df3e1120ff046440a60057aec38e6d5
+  - enabled: 1
     path: Assets/Scenes/Rooms/ControlRoom.unity
     guid: e22a48fc0b9a7894aa77447c703cf178
+  - enabled: 1
+    path: Assets/Scenes/Rooms/P Room.unity
+    guid: f6c4a4075c531ed44834108f6b323690
+  - enabled: 1
+    path: Assets/Scenes/Rooms/S Room.unity
+    guid: e1b128f4a77fa7145ac9dd43da91fd69
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Shift Room.unity
+    guid: 251fea2c758c88e449fb7085a4f3119f
+  - enabled: 1
+    path: Assets/Scenes/Rooms/T Room.unity
+    guid: c1d9bc70493e8ab4a976507351902b3a
+  - enabled: 1
+    path: Assets/Scenes/Rooms/Y Room.unity
+    guid: 05b5ec2f2225c2248a0256fed4bc7d85
   m_configObjects: {}
