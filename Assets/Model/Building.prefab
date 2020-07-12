@@ -328,6 +328,7 @@ MonoBehaviour:
   MaskFront: {fileID: 4607331267879355232}
   DoorExitSpawn: {fileID: 8824519112423433071}
   Door: {fileID: 8303655920357722932}
+  RoomName: 
 --- !u!50 &4607331269421919944
 Rigidbody2D:
   serializedVersion: 4
@@ -428,7 +429,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7549024408005130538
 Transform:
   m_ObjectHideFlags: 0

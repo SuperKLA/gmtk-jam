@@ -20,6 +20,7 @@ public class Building : MonoBehaviour
     public GameObject DoorExitSpawn;
     
     public Interactable Door;
+    public string RoomName;
 
     void Start()
     {
@@ -41,10 +42,14 @@ public class Building : MonoBehaviour
     {
         Renderer = this.GetComponentInChildren<SpriteRenderer>();
         MaskRenderer = this.GetComponentInChildren<SpriteMask>();
+        
+        Door.gameObject.SetActive(!string.IsNullOrEmpty(this.RoomName));
     }
     
     private void DoorOnInteracting()
     {
+        if (string.IsNullOrEmpty(this.RoomName)) return;
+        
         World.Current.OnBuildEnter(new BuildingData()
         {
             DoorPosition = this.DoorExitSpawn.transform.position
@@ -52,7 +57,7 @@ public class Building : MonoBehaviour
         
         OutOfControlCamera.Current.FadeOut(() =>
         {
-            SceneManager.LoadSceneAsync("BuildingRoom", LoadSceneMode.Additive).completed += operation =>
+            SceneManager.LoadSceneAsync(this.RoomName, LoadSceneMode.Additive).completed += operation =>
             {
 
             };

@@ -51,5 +51,6 @@ public class Character : MonoBehaviour
     public void SetCameraOffset(Transform trans)
     {
         trans.SetParent(this.CameraOffset, false);
+        trans.localPosition = new Vector3(0,0,-10);
     }
 }

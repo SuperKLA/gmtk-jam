@@ -8,10 +8,13 @@ public class World : MonoBehaviour
 {
     public static World Current;
     public BuildingData BuildingEnterData;
+    public Building PlayersHome;
+    public Character Player;
 
     void Start()
     {
         Current = this;
+        this.Player.SetCharacterOn(PlayersHome.DoorExitSpawn.transform.position);
     }
     
     public void OnBuildEnter( BuildingData data)
