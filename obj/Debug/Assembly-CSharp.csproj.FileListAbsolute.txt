@@ -331,3 +331,6 @@ F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Editor.dll
 F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Runtime.dll
 F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Editor.pdb
 F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\Unity.Postprocessing.Runtime.pdb
+F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\nunit.framework.dll
+F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\nunit.framework.pdb
+F:\Repositorys\gmtk_jam\gmtk-jam\Temp\bin\Debug\nunit.framework.xml
