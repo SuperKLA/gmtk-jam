@@ -90,7 +90,7 @@ static class Dialogs
             nextInteractor = StoryInteractor.T_IFR_WITH_Y;
             currentAct = Akt.Akt2;
             return CreateQueue(new List<DialogText>() {  new DialogText("N:", "Yo! Thanks! That's what we need!"),
-                                                         new DialogText("N:","Weird. The old circuit isn't burned. It's missing a capacitor. This shouldn't have worked in the first place. Someone <b>manipulated</b> it...")
+                                                         new DialogText("N:","Weird. The old circuit isn't burned. It's missing a capacitor. This shouldn't have worked in the first place. Someone <b>manipulated</b> it... <b>CTRL</b> would probably check his <b>Terminal</b>.")
 
 
             });
