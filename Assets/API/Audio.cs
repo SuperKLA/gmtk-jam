@@ -29,6 +29,16 @@ public class Audio : MonoBehaviour
     {
         audioMixer.SetFloat("MasterVolume", Mathf.Log10(value) * 20);
     }
+    
+    public void ChangeSFXVolume(float value)
+    {
+        audioMixer.SetFloat("SFX", Mathf.Log10(value) * 20);
+    }
+    
+    public void ChangeMusicVolume(float value)
+    {
+        audioMixer.SetFloat("Music", Mathf.Log10(value) * 20);
+    }
 
     public void StartSound(Akt akt)
     {

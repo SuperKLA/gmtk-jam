@@ -14,8 +14,13 @@ public class FinalScreen : MonoBehaviour
         this.Container.SetActive(false);
     }
 
+    [ContextMenu("Show")]
     public void Show()
     {
+        Audio.current.ChangeVolume(0);
+        Audio.current.ChangeSFXVolume(0);
+        Audio.current.ChangeMusicVolume(0);
+        
         this.Container.SetActive(true);
     }
 }

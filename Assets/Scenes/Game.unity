@@ -464,6 +464,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9009324941824915242, guid: 8bfda687831ef344a9b3c14cccba283e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2610919
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bfda687831ef344a9b3c14cccba283e, type: 3}
 --- !u!1 &211097143
@@ -2182,7 +2187,7 @@ MonoBehaviour:
     spaceCount: 4
     wordCount: 4
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -5470,6 +5475,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1863979328}
     m_Modifications:
+    - target: {fileID: 1988715991344756199, guid: 7e4c52b222142dc4c8c78dd56868ff60,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2610919
+      objectReference: {fileID: 0}
     - target: {fileID: 3184908191838389649, guid: 7e4c52b222142dc4c8c78dd56868ff60,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5839,6 +5849,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Space Building
       objectReference: {fileID: 0}
+    - target: {fileID: 3179971166998518872, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594638325456987506, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2610919
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594638325456987506, guid: 063c1d3c5ef142843bcc33312bc7932f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.28
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 063c1d3c5ef142843bcc33312bc7932f, type: 3}
 --- !u!1001 &2972342267384465697
@@ -6124,6 +6149,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1863979328}
     m_Modifications:
+    - target: {fileID: 6583180933748734130, guid: aa347b54ccda25c4f85c10dc454c2fd1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583180933748734130, guid: aa347b54ccda25c4f85c10dc454c2fd1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2610919
+      objectReference: {fileID: 0}
     - target: {fileID: 7851585759655741636, guid: aa347b54ccda25c4f85c10dc454c2fd1,
         type: 3}
       propertyPath: m_LocalPosition.x
