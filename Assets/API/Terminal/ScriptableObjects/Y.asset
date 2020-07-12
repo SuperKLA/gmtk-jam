@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0616ddab0922c4eb7c602bce6e0332, type: 3}
   m_Name: Y
   m_EditorClassIdentifier: 
-  name: Depot Y
-  image: {fileID: 21300000, guid: ccfec09edeb670b44a478edfc9b04696, type: 3}
+  name: Yacht shop
+  image: {fileID: 21300000, guid: 1976bcf7b93aedd4bad5c7772669244a, type: 3}
   state: 0

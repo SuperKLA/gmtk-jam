@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0616ddab0922c4eb7c602bce6e0332, type: 3}
   m_Name: T
   m_EditorClassIdentifier: 
-  name: Tee house
+  name: Tea house
   image: {fileID: 21300000, guid: 113a51878bb9f6c44b3e493b89bc8cb5, type: 3}
   state: 0
