@@ -127,7 +127,7 @@ PrefabInstance:
     - target: {fileID: 4607331269421919947, guid: 9836f9fad63e51940828a4a54679ee5a,
         type: 3}
       propertyPath: RoomName
-      value: GenericRoom
+      value: Y Room
       objectReference: {fileID: 0}
     - target: {fileID: 7549024408005130538, guid: 9836f9fad63e51940828a4a54679ee5a,
         type: 3}
