@@ -73,6 +73,7 @@
      <Compile Include="Assets\API\GameRunTime.cs" />
      <Compile Include="Assets\API\Interactable.cs" />
      <Compile Include="Assets\API\MonoBehaviourExtensions.cs" />
+     <Compile Include="Assets\API\NPC.cs" />
      <Compile Include="Assets\API\OutOfControlCamera.cs" />
      <Compile Include="Assets\API\Quest\Interactive.cs" />
      <Compile Include="Assets\API\Quest\Quest.cs" />
