@@ -41,11 +41,11 @@ public class TerminalControl : MonoBehaviour
 
     private void Start()
     {
-        if (Dialogs.currentAct == Akt.Akt1)
+        if (Dialogs.CurrentAct == Akt.Akt1)
             StartAct1();
-        if (Dialogs.currentAct == Akt.Akt2)
+        if (Dialogs.CurrentAct == Akt.Akt2)
             StartAct2();
-        if (Dialogs.currentAct == Akt.Akt3)
+        if (Dialogs.CurrentAct == Akt.Akt3)
             StartAct3();
     }
     public void StartAct1()

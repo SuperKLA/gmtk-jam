@@ -3,12 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using UnityEngine;
 
 static class Dialogs
 {
-    public static Akt currentAct = Akt.Akt1;
+    private static Akt currentAct = Akt.Akt1;
+    public static Akt CurrentAct { get => currentAct;
+        set {
+            currentAct = value;
+            Audio.current.StartSound(currentAct); }   }
+
+
     public static StoryInteractor nextInteractor =  StoryInteractor.GAME_START;
+
+
+
 
     #region Act 1
     public static Queue<DialogText> Dialog11
@@ -88,7 +97,7 @@ static class Dialogs
         get
         {
             nextInteractor = StoryInteractor.T_IFR_WITH_Y;
-            currentAct = Akt.Akt2;
+            CurrentAct = Akt.Akt2;
             return CreateQueue(new List<DialogText>() {  new DialogText("N:", "Yo! Thanks! That's what we need!"),
                                                          new DialogText("N:","Weird. The old circuit isn't burned. It's missing a capacitor. This shouldn't have worked in the first place. Someone <b>manipulated</b> it... <b>CTRL</b> would probably check his <b>Terminal</b>.")
 
@@ -138,6 +147,7 @@ static class Dialogs
         get
         {
             nextInteractor = StoryInteractor.K_IFR_P;
+            CurrentAct = Akt.Akt3;
             return CreateQueue(new List<DialogText>() {  new DialogText("Y:","I checked <b>my calendar at the YACHT-SHOP</b>, it’s today."),
                                                          new DialogText("SPACE:","You should check it again, it seems to be yesterday already."),
                                                          new DialogText("T:","Well, it’s back to work then.")
