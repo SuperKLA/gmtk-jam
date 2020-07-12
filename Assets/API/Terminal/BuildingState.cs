@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 public enum BuildingState
 {
-    OK, ERROR
+    OK, ALERT
 }
 

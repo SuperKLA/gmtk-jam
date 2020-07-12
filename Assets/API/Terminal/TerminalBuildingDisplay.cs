@@ -28,7 +28,7 @@ public class TerminalBuildingDisplay : MonoBehaviour
         buildingImage.sprite = terminalBuilding.image;
         buildingName.text = terminalBuilding.name;
         buildingState.faceColor = new Color32(255, 255, 255, 255);
-        if (terminalBuilding.state == BuildingState.ERROR)
+        if (terminalBuilding.state == BuildingState.ALERT)
         {
             StopAllCoroutines();
             StartCoroutine(ERRORText());
@@ -66,7 +66,7 @@ public class TerminalBuildingDisplay : MonoBehaviour
         {
             buildingState.text = "";
             yield return new WaitForSeconds(.5f);
-            buildingState.text = "ERROR";
+            buildingState.text = "ALERT";
             yield return new WaitForSeconds(.5f);
         }
     }
