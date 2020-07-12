@@ -16,6 +16,7 @@ public class DialogManager : MonoBehaviour
 
 
     public bool IsDialogActive { get { return dialogActive; } }
+    public bool openTerminalAfterDialog = false;
 
     public static DialogManager Current;
 
@@ -46,6 +47,13 @@ public class DialogManager : MonoBehaviour
     {
         dialogActive = false;
         HideDialog();
+
+        if (openTerminalAfterDialog)
+        {
+            openTerminalAfterDialog = false;
+            GameRunTime.Current.OpenOrCloseTerminal(true);
+        }
+
         SpecialEventHandling();
     }
 
@@ -72,7 +80,6 @@ public class DialogManager : MonoBehaviour
                 break;
         }
     }
-
 
     private void ShowDialog()
     {

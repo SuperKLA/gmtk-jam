@@ -37,7 +37,10 @@ public class GameRunTime : MonoBehaviour
                 break;
             case Interactive.StartTerminal:
                 if (Dialogs.nextInteractor == StoryInteractor.TERMINAL_START)
+                {
                     TriggerDialog(Dialogs.Dialog13);
+                    DM.openTerminalAfterDialog = true;
+                }
                 else
                 {
                     TriggerDialog(null);
