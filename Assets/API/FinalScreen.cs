@@ -11,6 +11,7 @@ public class FinalScreen : MonoBehaviour
     public void Awake()
     {
         Current = this;
+        this.Container.SetActive(false);
     }
 
     public void Show()
