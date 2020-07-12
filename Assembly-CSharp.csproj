@@ -64,6 +64,7 @@
      <Compile Include="Assets\API\BuildingRoomCamera.cs" />
      <Compile Include="Assets\API\CameraCircleFade.cs" />
      <Compile Include="Assets\API\Character.cs" />
+     <Compile Include="Assets\API\CharacterAudio.cs" />
      <Compile Include="Assets\API\CharacterInput.cs" />
      <Compile Include="Assets\API\Dialog\Akt.cs" />
      <Compile Include="Assets\API\Dialog\DialogManager.cs" />
